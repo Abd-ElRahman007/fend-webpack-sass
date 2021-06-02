@@ -8,12 +8,12 @@ function handleSubmit(event) {
 
     console.log("::: Form Submitted :::")
     fetch('http://localhost:8081/test')
-    .then(res => {
-        return res.json()
-    })
-    .then(function(data) {
-        document.getElementById('results').innerHTML = data.message
-    })
+        .then(res => {
+            return res.json()
+        })
+        .then(function (data) {
+            document.getElementById('results').innerHTML = data.message
+        })
 }
 
 export { handleSubmit }
